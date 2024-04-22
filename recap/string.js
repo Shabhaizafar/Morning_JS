@@ -82,16 +82,9 @@ console.log(str1.lastIndexOf('o'));
 ///////////////////////////////
 
 // str1.toLowerCase
-console.log(str1.toLowerCase());
+// console.log(str1.toLowerCase());
 ///////////////////////////////
 // str1.toUpperCase
 // console.log(str1.toUpperCase());
 ///////////////////////////////////
 
- // str1.trim
-// str1.trimStart
-// str1.trimEnd
-// str1.valueOf
-// str1.slice
-// str1.substring
-// str1.substr 
