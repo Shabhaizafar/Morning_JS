@@ -75,3 +75,107 @@ var str = [1,2,3,4,4];
 //     Arr[i]=Arr[i][0].toUpperCase()+Arr[i].slice(1);
 // }
 // console.log(Arr.join(' '));
+// //////////////////////////////////////////////////////////////////////////
+// 10. Write a JavaScript function that takes a string with both lowercase and upper case letters as a parameter. It converts upper case letters to lower case, and lower case letters to upper case.
+// Test Data :
+// console.log(swapcase('AaBbc'));
+// "aAbBC"
+// var str = "AaBbc";
+// var convert = "";
+
+// for (let i = 0; i < str.length; i++) {
+//     console.log(str[i],str[i].charCodeAt());
+//     if(str[i].charCodeAt()>=65 && str[i].charCodeAt()<=90)
+//     {
+//         convert+=str[i].toLowerCase();
+//     }
+//     else if(str[i].charCodeAt()>=97 && str[i].charCodeAt()<=122)
+//     {
+//         convert+=str[i].toUpperCase();
+//     }
+//     else{
+//         convert+=str[i];
+//     }
+// }
+// console.log(convert);
+
+/////////////////////////////////////
+// 11. Write a JavaScript function to convert a string into camel case.
+ //ex 9
+/////////////////////////////////
+// 12. Write a JavaScript function to uncommelize a string.
+// Test Data :
+// console.log(uncamelize('helloWorld'));
+// console.log(uncamelize('helloWorld','-'));
+// console.log(uncamelize('helloWorld','_'));
+// "hello world"
+// "hello-world"
+// "hello_world"
+
+// var str = "helloWorld";
+// var value = "_";
+// var uncamelize = "";
+
+// for (let i = 0; i < str.length; i++) {
+//     if(str[i].charCodeAt()>=65 && str[i].charCodeAt()<=90)
+//     {
+//         if(value)
+//         {
+//             uncamelize+=value;
+//         }
+//         else
+//         {
+//             uncamelize+=" ";
+
+//         }
+//         uncamelize+=str[i].toLowerCase();
+//     }
+//         else if(str[i].charCodeAt()>=97 && str[i].charCodeAt()<=122)
+//     {
+//         uncamelize+=str[i];
+//     }   
+// }
+// console.log(uncamelize);
+////////////////////////////////
+// 13. Write a JavaScript function to concatenate a given string n times (default is 1).
+// Test Data :
+// console.log(repeat('Ha!'));
+// console.log(repeat('Ha!',2));
+// console.log(repeat('Ha!',3));
+// "Ha!"
+// "Ha!Ha!"
+// "Ha!Ha!Ha!"
+
+// var str = "Ha!";
+// var value = 5;
+// var final = "";
+
+// for (let i = 0; i <value; i++) {
+//     final+=str;
+// }
+// console.log(final);
+
+//////////////////////////////////////
+// 14. Write a JavaScript function to insert a string within a string at a particular position (default is 1).
+// Test Data :
+// console.log(insert('We are doing some exercises.'));
+// console.log(insert('We are doing some exercises.','JavaScript '));
+// console.log(insert('We are doing some exercises.','JavaScript ',18));
+// "We are doing some exercises."
+// "JavaScript We are doing some exercises."
+// "We are doing some JavaScript exercises."
+
+var str = "We are doing some exercises.";
+var insert = "";
+var positon = 0;
+console.log(str);
+var Arr = str.split('');
+console.log(Arr);
+
+
+for (let i = 0; i < Arr.length; i++) {
+    if(i==positon)
+    {
+        console.log(Arr[i]);
+    }
+}
