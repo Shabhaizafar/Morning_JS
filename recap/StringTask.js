@@ -165,17 +165,171 @@ var str = [1,2,3,4,4];
 // "JavaScript We are doing some exercises."
 // "We are doing some JavaScript exercises."
 
-var str = "We are doing some exercises.";
-var insert = "";
-var positon = 0;
-console.log(str);
-var Arr = str.split('');
-console.log(Arr);
+// var str = "We are doing some exercises.";
+// var str2 = "Zafar";
+// var insert = "";
+// var positon =12;
+// console.log(str);
+// var Arr = str.split('');
+// console.log(Arr);
+// for (let i = 0; i < Arr.length; i++) {
+//     if(i==positon)
+//     {
+//         if(positon==0 || Arr[i-1]==" ")
+//         {
+//             insert=insert+str2+" ";
+//         }
+//         if(Arr[i+1]==" " || positon==Arr.length-1)
+//         {
+//             insert=insert+" "+str2;
+//         }
+//         else
+//         {
+//             insert=insert+" "+str2 +" ";
+//         }
+//         insert+=Arr[i];
+//     }
+//     else
+//     {
+//         insert+=Arr[i];
+//     }
+// }
+// if(Arr.length < positon)
+// {
+//     insert+=str2;
+// }
+// console.log(insert);
+
+// var str = "We are doing some exercises.";
+// var insert  = "    JS ";
+// var position = 10;
 
 
-for (let i = 0; i < Arr.length; i++) {
-    if(i==positon)
-    {
-        console.log(Arr[i]);
-    }
-}
+// var final = str.slice(0,position)+insert+str.slice(position);
+// // str.slice(0,position)
+
+// console.log(final);
+
+/////////////////////////////////////
+// 15. Write a JavaScript function that format a number in a human-readable string with the correct suffix, such as 1st, 2nd, 3rd, etc.
+// Test Data :
+// console.log(humanize_format());
+// console.log(humanize_format(1));
+// console.log(humanize_format(8));
+// console.log(humanize_format(301));
+// console.log(humanize_format(402));
+// "1st"
+// "8th"
+// "301st"
+// "402nd"
+
+// var n1 = 10243;
+// var Arr = ['st','nd','rd','th'];
+
+// if(String(n1)[String(n1).length-1]==1)
+// {
+//     console.log(n1+"st");
+// }
+// else if(String(n1)[String(n1).length-1]==2)
+// {
+//     console.log(n1+'nd');
+// }
+// else if(String(n1)[String(n1).length-1]==3)
+// {
+//     console.log(n1+'rd');
+// }
+// else{
+//     console.log(n1+'th');
+// }
+// /////////////////////////////////////////////////////////////
+// 17. Write a JavaScript function to chop a string into chunks of a given length.
+// Test Data :
+// console.log(string_chop('w3resource'));
+// console.log(string_chop('w3resource',2));
+// console.log(string_chop('w3resource',3));
+// ["w3resource"]
+// ["w3", "re", "so", "ur", "ce"]
+// ["w3r", "eso", "urc", "e"]
+
+// var str  = "w3resource";
+// var n1 = 2;
+// var Arr = [];
+
+// for (let i = 0; i < str.length; ) {
+//     if(n1!=0)
+//     {
+//         Arr.push(str.substr(i,n1));
+//         i+=n1;
+//     }
+//     else
+//     {
+//         Arr.push(str);
+//         i+=str.length;
+//     }
+// }
+
+// console.log(Arr);
+
+/////////////////////////////////////////////
+// 18. Write a JavaScript function to count substrings in a string.
+// Test Data :
+// console.log(count("The quick brown fox jumps over the lazy dog", 'the'));
+// Output :
+// 2
+// console.log(count("The quick brown fox jumps over the lazy dog", 'fox',false));
+// Output :
+// 1
+
+
+// var str = "The quick brown fox thejumps over the lazy dog".toLowerCase();
+// var check = "the".toLowerCase();
+// var Arr = str.split(check);
+// console.log(Arr.length-1);
+
+
+//////////////////////////
+
+// 19. Write a JavaScript function that takes a positive integer and reverses the binary representation of that integer. Finally return the decimal version of the binary string.
+// Test Data :
+// (100) -> 19
+// Explanation:
+// Binary representation of 100 is 1100100
+// Reverse of 1100100 is 10011
+// Decimal form of 10011 is 19
+// (1134) -> 945
+// Explanation:
+// Binary representation of 1134 is 10001101110
+// Reverse of 10001101110 is 1110110001
+// Decimal form of 1110110001 is 945
+
+
+
+
+// 19 -> 100  -> 1100100 -> 0010011 -> 10011 -> 
+
+
+// 1 to 15  0000 - 1111 
+
+//11  
+
+        //  2   11      1
+        //  2    5      1
+        //  2    2      0
+        //       1
+
+//decimal to binary 
+
+// var n1 = 100;
+// var binary = "";
+
+// while(n1>1)
+// {
+//     binary+=n1%2;
+//     n1 = parseInt(n1/2);
+// }
+// binary+=1;
+// console.log(binary.split('').reverse().join(''));
+
+
+
+// binary to decimal 
