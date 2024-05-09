@@ -317,19 +317,132 @@ var str = [1,2,3,4,4];
         //  2    2      0
         //       1
 
-//decimal to binary 
 
-// var n1 = 100;
+// //decimal to binary 
+// var n1 = 1134;
 // var binary = "";
 
-// while(n1>1)
+// while(n1>=1)
 // {
 //     binary+=n1%2;
 //     n1 = parseInt(n1/2);
 // }
-// binary+=1;
 // console.log(binary.split('').reverse().join(''));
 
+// // binary to decimal 
+
+// var decimal = 0;
+
+// for (let i = 0; i < binary.length; i++) {
+//         decimal+=binary[i]*Math.pow(2,binary.length-i-1);
+// }
+// console.log(decimal);
 
 
-// binary to decimal 
+// 1    * 2^(str.length-i-1)   = 2^3 = 8
+// 0    * 2^(str.length-i-1)   = 2^2 = 0
+// 1    * 2^(str.length-i-1)   = 2^1 = 2
+// 1    * 2^(str.length-i-1)   = 2^0  = 1
+
+
+////////////////////////////////////////
+//n = octal
+
+///////////////////////////////
+// 20. Write a JavaScript function that can pad (left, right) a string to get to a specific length.
+// Test Data :
+// console.log(formatted_string('0000',123,'l'));
+// console.log(formatted_string('00000000',123,''));
+// Output :
+// "0123"
+// "12300000"
+
+// var format= '000000000';
+// var num = String(123);
+// var Arr = num.split('');
+// var dif;
+
+// var order = 'l';
+// if(order)
+// {
+//         if(format.length>num.length)
+//         {
+//                 dif = format.length - num.length;
+//                 for (let i = 0; i < dif; i++) {
+//                         Arr.unshift(0);                
+//                 }
+//                 console.log(Arr.join(''));
+//         }
+// }
+// else
+// {
+
+// }
+
+////////////////////////////////////////////////////////////////////////////
+
+// Write a JavaScript function to repeat a string for a specified time.
+// Test Data :
+// console.log(repeat_string('a', 4));
+// console.log(repeat_string('a'));
+// Output :
+// "aaaa"
+// "Error in string or count."
+
+// var str = 'a';
+// var timer = 10;
+// var ans = ""
+
+// for (let i = 0; i <timer; i++) {
+//         ans+=str;
+// }
+// if(timer!=0)
+// {
+//         console.log(ans);
+// }
+// else
+// {
+//         console.log("Error in string or count.");
+// }
+
+// ////////////////////////////////////////////;
+
+// 22. Write a JavaScript function to get a part of a string after a specified character.
+// Test Data :
+// console.log(subStrAfterChars('w3resource: JavaScript Exercises', ':','a'));
+// console.log(subStrAfterChars('w3resource: JavaScript Exercises', 'E','b'));
+// Output :
+// "w3resource"
+// "xercises"
+// var str = "w3resource: JavaScript Exercises";
+// var char = prompt("String is :\nw3resource: JavaScript Exercises\n\nEnter a Char : ");
+// var choice = prompt("a for Left Side\nb for right Side\n\nEnter your Choice : ");
+
+// switch (choice) {
+//         case 'a':
+//                 console.log(str.slice(0,str.indexOf(char)));
+//                 break;
+//         case 'b':
+//                 console.log(str.slice(str.indexOf(char)+1));
+//                 break;
+//         default:
+//                 console.log(str);
+//                 break;
+// }
+//////////////////////////////
+// 23. Write a JavaScript function to strip leading and trailing spaces from a string.
+// Test Data :
+// console.log(strip('w3resource '));
+// console.log(strip(' w3resource'));
+// console.log(strip(' w3resource '));
+// Output :
+// "w3resource"
+// "w3resource"
+// "w3resource"
+//////////////////////////////////
+// 24. Write a JavaScript function to truncate a string to a certain number of words.
+// Test Data :
+// console.log(truncate('The quick brown fox jumps over the lazy dog', 4));
+// Output :
+// "The quick brown fox"
+//////////////////////////////////////
