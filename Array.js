@@ -66,25 +66,19 @@
 // console.log("Value of N1 after inc : ",n1);//13
 // console.log("Value of N2 after inc : ",n2);//12
 
-var Arr1 = [1,2,3];
-var Arr2 = Arr1;
+// var Arr1 = [1,2,3];
+// var Arr2 = Arr1;
 
-console.log("Values of Array 1 : ",Arr1);
-console.log("Values of Array 2 : ",Arr2);
+// console.log("Values of Array 1 : ",Arr1);
+// console.log("Values of Array 2 : ",Arr2);
 
-Arr1.push(100);
-Arr2.shift();
-console.log("Values of Array 1 after pushing : ",Arr1);
-console.log("Values of Array 2  after pushing: ",Arr2);
+// Arr1.push(100);
+// Arr2.shift();
+// console.log("Values of Array 1 after pushing : ",Arr1);
+// console.log("Values of Array 2  after pushing: ",Arr2);
 
 
 ///////////////////////////////////////
 
 
-// - Clone array & spread operator.
-// - For loop.
-// - use const for creating arrays.
-// - While loop in array.
-// - For of loop.
-// - For in loop.
-// - Array destructuring.
+
