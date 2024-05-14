@@ -83,3 +83,19 @@
 
 /////////////////////////////////////////
 // - Array destructuring.
+// var Arr = [1,2,3,4,5,6,7];
+// console.log(Arr);
+
+// var v1 = Arr[0];
+// var v2 = Arr[1];
+// var v3 = Arr[3];
+// var v4 = Arr[4];
+// var v5 = Arr[5];
+
+// console.log(v1);
+
+// var [v1,,v2,v3,...newArr] = Arr;
+// console.log(v1);
+// console.log(v2);
+// console.log(v3);
+// console.log(newArr);
