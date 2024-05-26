@@ -81,5 +81,5 @@ console.log(output + "ASDFG");
 // console.log(output);
 
 ////////////////////////////////////////////////////////////////////////
-// 1)  wap to check given input is Pelindrome or not. (using with arg and without rtn type) (string/number)
+// 1) wap to check given input is Pelindrome or not. (using with arg and without rtn type) (string/number)
 // 2) wap to check given number is Perfect or Not. (using with arg and with rtn type) 
