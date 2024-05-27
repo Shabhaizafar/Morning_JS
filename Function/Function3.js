@@ -46,4 +46,4 @@ const output  = Result(22);
 // var Addition =  n1,n2 =>console.log(typeof n2); 
 
 
-Addition(12); // argument 13,12  //invalid
+// Addition(12); // argument 13,12  //invalid
