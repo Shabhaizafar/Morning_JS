@@ -59,7 +59,6 @@
 
 // Closure Example: Use an IIFE to create a closure that maintains a private counter and exposes functions to increment and retrieve the counter's value.
 
-// Using IIFE with DOM: Write an IIFE that adds a click event listener to a button with the ID myButton and logs a message when the button is clicked.
 
 // Avoiding Global Variables: Show how an IIFE can be used to encapsulate module code to avoid polluting the global namespace.
 
