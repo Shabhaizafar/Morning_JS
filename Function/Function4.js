@@ -56,13 +56,18 @@
 
 ////////////////////////////////////////
 // Private Methods: Create an IIFE that has a private function and demonstrate how it cannot be accessed from outside the IIFE.
+// (
+//     function (){
+//         // console.log(n1);
+//         var n =()=>{
+//             var n1 = 12;
+//             console.log("Hello");
+//         }
+//         n();
+//         console.log(n1);
+//     }
+// )();
+// n();
+// console.log(n1);
 
-// Closure Example: Use an IIFE to create a closure that maintains a private counter and exposes functions to increment and retrieve the counter's value.
-
-
-// Avoiding Global Variables: Show how an IIFE can be used to encapsulate module code to avoid polluting the global namespace.
-
-
-// Immediately Invoked Arrow Functions: Write an IIFE using an arrow function to log a message to the console.
 //////////////////////////
-// Generator Function 
